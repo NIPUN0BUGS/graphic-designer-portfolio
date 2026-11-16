@@ -1,0 +1,6 @@
+import { motion } from "motion/react";
+import AnimatedSection from "./AnimatedSection.jsx";
+
+export default function Contact() {
+  return <AnimatedSection className="contact-section section-wrap" id="contact"><motion.div className="contact-panel" whileInView={{ borderColor: "rgba(75,216,242,.55)" }} viewport={{ once: true }}><div className="eyebrow"><span className="eyebrow-line" /> HAVE A PROJECT IN MIND?</div><h2>Let's make<br /><span className="gradient-text">something great.</span></h2><p>I'm open to graphic design opportunities, collaborations and creative projects. Reach out and let's talk.</p><div className="contact-actions"><a className="button button-primary" href="https://github.com/NIPUN0BUGS" target="_blank" rel="noreferrer">View GitHub profile ↗</a></div><div className="contact-foot"><span>BASED IN SRI LANKA</span><span>CREATIVE · PURPOSEFUL · DETAIL-DRIVEN</span></div></motion.div></AnimatedSection>;
+}

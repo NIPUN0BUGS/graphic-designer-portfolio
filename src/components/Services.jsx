@@ -1,0 +1,7 @@
+import { motion } from "motion/react";
+import AnimatedSection from "./AnimatedSection.jsx";
+
+const services = [["01", "✳", "Social Media Design", "Posts, stories and campaign creatives."], ["02", "▧", "Posters & Flyers", "Promotional, event and announcement designs."], ["03", "◈", "Branding & Identity", "Visual direction and brand-focused graphic assets."], ["04", "⌘", "Education & Business", "Clear designs for learning and business."]];
+export default function Services() {
+  return <AnimatedSection className="services-section section-wrap" id="services"><div className="section-heading"><div><div className="eyebrow"><span className="eyebrow-line" /> WHAT I CAN CREATE</div><h2>Creative <span className="gradient-text">services.</span></h2></div><p>Visual communication tailored to your audience, platform and purpose.</p></div><div className="service-grid">{services.map(([n, icon, title, desc], i) => <motion.div className="service-card" key={n} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * .12 }} whileHover={{ y: -8, borderColor: "rgba(75,216,242,.6)" }}><span className="service-index">{n}</span><span className="service-symbol">{icon}</span><h3>{title}</h3><p>{desc}</p></motion.div>)}</div></AnimatedSection>;
+}
