@@ -1,31 +1,5 @@
 import { motion } from "motion/react";
 import AnimatedSection from "./AnimatedSection.jsx";
-
-const tools = ["Canva", "CorelDRAW", "Figma", "Adobe Photoshop", "Adobe Illustrator"];
-const designWork = ["Logos & brand visuals", "Social media creatives", "Posters & leaflets", "Visiting & wedding cards", "Certificates & promotional materials"];
-
-export default function About() {
-  return <AnimatedSection className="about-section" id="about">
-    <div className="section-wrap about-layout">
-      <div>
-        <div className="eyebrow"><span className="eyebrow-line" /> GET TO KNOW ME</div>
-        <div className="about-big">A creative<br />mind with a<br /><span className="gradient-text">technical edge.</span></div>
-        <div className="about-signature">NIPUN SAMARAKOON <span>· GRAPHIC DESIGNER</span></div>
-      </div>
-      <div className="about-content">
-        <p className="about-intro">Hello, I'm <strong>Nipun Samarakoon</strong> — a freelance graphic designer with a background in Software Engineering.</p>
-        <p>I enjoy turning ideas into clear, engaging visuals that help people and businesses communicate. Through my creative work with C Creations, I've worked on a range of design materials, including logos, social media posts, visiting cards, posters, leaflets, wedding cards and certificates.</p>
-        <p>My software engineering background brings a problem-solving mindset to my design process. I pay attention to layout, colour, typography and the small details that make a design both attractive and easy to understand.</p>
-        <div className="about-detail-block">
-          <h3>WHAT I WORK ON</h3>
-          <div className="about-work-list">{designWork.map((item, i) => <motion.span key={item} initial={{ opacity: 0, x: 12 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * .07 }}><span>↗</span>{item}</motion.span>)}</div>
-        </div>
-        <div className="about-detail-block">
-          <h3>TOOLS I USE</h3>
-          <div className="skill-tags">{tools.map((tool, i) => <motion.span key={tool} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * .08 }}>{tool}</motion.span>)}</div>
-        </div>
-        <div className="about-availability"><span className="status-dot" /> Based in Sri Lanka · Open to freelance projects and creative opportunities</div>
-      </div>
-    </div>
-  </AnimatedSection>;
-}
+const tools=["Canva","CorelDRAW","Figma","Adobe Photoshop","Adobe Illustrator"];
+const designWork=["Logos & brand visuals","Social media creatives","Posters & leaflets","Visiting & wedding cards","Certificates & promotional materials"];
+export default function About(){return <AnimatedSection className="about-section" id="about"><div className="section-wrap about-layout"><div><div className="eyebrow"><span className="eyebrow-line"/> GET TO KNOW ME</div><div className="about-big">A creative<br/>mind with a<br/><span className="gradient-text">technical edge.</span></div><div className="about-signature">NIPUN SAMARAKOON <span>· GRAPHIC DESIGNER</span></div><motion.div className="journey-card" initial={{opacity:0,y:24}} whileInView={{opacity:1,y:0}} viewport={{once:true}}><div className="journey-years"><strong>2020</strong><span>CREATIVE JOURNEY</span><strong>2026</strong></div><div className="journey-track"><motion.span initial={{scaleX:0}} whileInView={{scaleX:1}} viewport={{once:true}} transition={{duration:1.3,ease:"easeOut"}}/></div><p>Growing through ideas, design practice and creative projects.</p></motion.div></div><div className="about-content"><p className="about-intro">Hello, I'm <strong>Nipun Samarakoon</strong> — a freelance graphic designer with a background in Software Engineering.</p><p>I enjoy turning ideas into clear, engaging visuals that help people and businesses communicate. Through my creative work with C Creations, I've worked on a range of design materials, including logos, social media posts, visiting cards, posters, leaflets, wedding cards and certificates.</p><p>My software engineering background brings a problem-solving mindset to my design process. I pay attention to layout, colour, typography and the small details that make a design both attractive and easy to understand.</p><div className="about-detail-block"><h3>WHAT I WORK ON</h3><div className="about-work-list">{designWork.map((item,i)=><motion.span key={item} initial={{opacity:0,x:12}} whileInView={{opacity:1,x:0}} viewport={{once:true}} transition={{delay:i*.07}}><span>↗</span>{item}</motion.span>)}</div></div><div className="about-detail-block"><h3>TOOLS I USE</h3><div className="skill-tags">{tools.map((tool,i)=><motion.span key={tool} initial={{opacity:0,y:10}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:i*.08}}>{tool}</motion.span>)}</div></div><div className="about-availability"><span className="status-dot"/> Based in Sri Lanka · Open to freelance projects and creative opportunities</div></div></div></AnimatedSection>}
