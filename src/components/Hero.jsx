@@ -55,7 +55,7 @@ export default function Hero() {
         </motion.div>
       </AnimatePresence>
       <motion.div className="art-sticker" animate={{ y: [0, -10, 0], rotate: [9, 13, 9] }} transition={{ duration: 5, repeat: Infinity }}><span>DESIGN</span><strong>WITH<br />IMPACT.</strong><i>✳</i></motion.div>
-      <div className="art-caption">SELECTED CREATIVE WORKS <span>2025 — 2026</span></div>
+      <div className="art-caption">SELECTED CREATIVE WORKS <span>2020 — 2026</span></div>
     </div>
     <div className="hero-bottom"><span>SCROLL TO EXPLORE</span><span className="scroll-line" /><span>{String(activeWork + 1).padStart(2, "0")} / {String(heroWorks.length).padStart(2, "0")}</span></div>
   </section>;
