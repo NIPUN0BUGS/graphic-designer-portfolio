@@ -12,7 +12,7 @@ Open `index.html` in a browser. No build step or dependencies are required.
 4. Categories: `advertising`, `events`, `education`, `branding`.
 
 ## Update contact details
-Replace the placeholder `mailto:` link in the contact section with your professional email. Add LinkedIn and WhatsApp details when ready.
+Add your professional email, LinkedIn and WhatsApp links to the contact section when ready.
 
 ## GitHub Pages
 Repository Settings → Pages → Deploy from a branch → `main` → `/ (root)` → Save.
