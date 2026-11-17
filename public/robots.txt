@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://graphic-designer-portfolio-nipun0bugs-projects.vercel.app/sitemap.xml
