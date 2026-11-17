@@ -17,6 +17,7 @@ const front=heroWorks[activeWork],back=heroWorks[(activeWork+1)%heroWorks.length
 return <section className="hero section-wrap" id="home"><div className="hero-copy">
 <motion.div className="eyebrow" initial={{opacity:0,x:-20}} animate={{opacity:1,x:0}} transition={{delay:.2}}><span className="eyebrow-line"/> GRAPHIC DESIGNER · SRI LANKA</motion.div>
 <h1><KineticLine text="Ideas made" delay={.25}/><KineticLine text="visual." className="gradient-text" delay={.55}/></h1>
+<motion.div className="hero-about" initial={{opacity:0,y:14}} animate={{opacity:1,y:0}} transition={{delay:.88,duration:.55}}><span className="hero-about-label">ABOUT ME</span><p>I’m <strong>Nipun Samarakoon</strong> — a freelance graphic designer with a Software Engineering background. I turn ideas into clear, engaging visuals for brands and businesses.</p></motion.div>
 <motion.p className="hero-lead" initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.05}}>I create eye-catching graphic designs that help brands, businesses and ideas stand out.</motion.p>
 <motion.div className="hero-actions" initial={{opacity:0,y:15}} animate={{opacity:1,y:0}} transition={{delay:1.2}}><MagneticLink className="button button-primary" href="#work">Explore my work <span>↘</span></MagneticLink><MagneticLink className="text-link" href="#contact">Get in touch ↗</MagneticLink></motion.div>
 <div className="hero-meta"><span className="status-dot"/> Available for opportunities & freelance projects</div></div>
