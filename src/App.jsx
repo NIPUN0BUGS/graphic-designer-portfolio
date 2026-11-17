@@ -11,6 +11,7 @@ import Lightbox from "./components/Lightbox.jsx";
 import IntroLoader from "./components/IntroLoader.jsx";
 import CustomCursor from "./components/CustomCursor.jsx";
 import VideoShowcase from "./components/VideoShowcase.jsx";
+import Testimonials from "./components/Testimonials.jsx";
 
 export default function App() {
   const [selected, setSelected] = useState(null);
@@ -27,7 +28,7 @@ export default function App() {
     <motion.div className="scroll-progress" style={{ scaleX }} />
     <div className="ambient ambient-one" /><div className="ambient ambient-two" />
     <Navbar />
-    <main><Hero /><About /><Portfolio onOpen={setSelected} /><VideoShowcase /><Services /><Contact /></main>
+    <main><Hero /><About /><Portfolio onOpen={setSelected} /><VideoShowcase /><Testimonials /><Services /><Contact /></main>
     <Footer />
     <Lightbox project={selected} onClose={() => setSelected(null)} />
   </>;
