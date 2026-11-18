@@ -3,6 +3,7 @@ import { motion, useScroll, useSpring } from "motion/react";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import Portfolio from "./components/Portfolio.jsx";
+import SoftwareProjects from "./components/SoftwareProjects.jsx";
 import About from "./components/About.jsx";
 import Services from "./components/Services.jsx";
 import Contact from "./components/Contact.jsx";
@@ -28,7 +29,7 @@ export default function App() {
     <motion.div className="scroll-progress" style={{ scaleX }} />
     <div className="ambient ambient-one" /><div className="ambient ambient-two" />
     <Navbar />
-    <main><Hero /><About /><Portfolio onOpen={setSelected} /><VideoShowcase /><Testimonials /><Services /><Contact /></main>
+    <main><Hero /><About /><Portfolio onOpen={setSelected} /><SoftwareProjects /><VideoShowcase /><Testimonials /><Services /><Contact /></main>
     <Footer />
     <Lightbox project={selected} onClose={() => setSelected(null)} />
   </>;
